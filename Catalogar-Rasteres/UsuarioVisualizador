@@ -1,0 +1,9 @@
+import arcpy
+arcpy.management.CreateDatabaseUser(
+    input_database=r"\\BJOMEHZADEH\zDataStores\AGPro@Insights.sde",
+    user_authentication_type="DATABASE_USER",
+    user_name="ViewersPRO",
+    user_password="*****",
+    role="db_denydatawriter",
+    tablespace_name=""
+)
